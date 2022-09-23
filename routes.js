@@ -6,4 +6,6 @@ module.exports = function (app) {
   app.route("/").get(jsonku.index);
 
   app.route("/getusers").get(jsonku.getAllUser);
+
+  app.route("/getuser/:id").get(jsonku.getUserById);
 };
