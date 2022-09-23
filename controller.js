@@ -4,5 +4,5 @@ var response = require("./res");
 var connection = require("./database");
 
 exports.index = function (req, res) {
-  response.ok("App running");
+  response.ok("App running", res);
 };
